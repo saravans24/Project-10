@@ -1,0 +1,179 @@
+body{
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: "Poppins", sans-serif;
+    background-color: antiquewhite;
+
+    width: 100%;
+height: 100vh;
+background-image: url(./images/interior.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: bottom;
+position: relative;
+background-color: #0000007d;
+background-blend-mode: darken;
+color: white;
+margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+  }
+
+.headimg {
+    align-self: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.headright {
+    display: flex;
+    gap: 50px;
+    border-bottom: 1px solid;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+}
+.headrightend {
+    display: flex;
+    align-items: center;
+}
+
+.line2{
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0;
+}
+
+.line2l h1{
+    font-size: 60px;
+}
+
+.line2ri, .line3ri{
+    position: relative;
+}
+
+.line2ri,.line3ri {
+    border: 1px solid;
+    /* opacity: 0.8; */
+    background-color: rgb(255 255 255 / 15%);
+    padding: 25px;
+    border: none;
+}
+
+.line2ri p, .line3ri p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.line2ri1 {
+    border-right: 1px solid;
+    height: 75px;
+    position: absolute;
+    bottom: -45%;
+    right: 85px;
+}
+
+.line2ri2 {
+    padding: 7px;
+    border: 1px solid;
+    position: absolute;
+    background-color: white;
+    right: 77px;
+    border-radius: 15px;
+    bottom: -45%;
+}
+
+.line3 {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -50px;
+}
+
+.line3l {
+    position: relative;
+    right: 80px;
+  }
+
+.line3l button {
+    font-size: 25px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+}
+
+.line3ri {
+    right: 80px;
+}
+
+.line3ri1 {
+    border-top: 1px solid;
+    width: 25%;
+    right: -60px;
+    bottom: 60%;
+    position: absolute;
+}
+
+.line3ri2 {
+    padding: 7px;
+    border: 1px solid;
+    position: absolute;
+    background-color: white;
+    right: -30%;
+    border-radius: 15px;
+    bottom: 56%;
+}
+
+@media (max-width:500px){
+
+    body {
+        height: 120vh;
+    }
+
+   .headright ul li {
+    display: none;
+   } 
+
+   .line2l h1 {
+    font-size: 45px;
+  }
+
+   .line2ri {
+    position: absolute;
+    bottom: 250px;
+    left: 150px;
+  }
+
+  .line3 {
+    left: 110px;
+  }
+
+  .line3l button {
+    font-size: 15px;
+  }
+
+  .line3ri {
+    position: absolute;
+    bottom: -400px;
+    left: -100px;
+    width: 200px;
+  }
+
+  .line3ri2 {
+    right: -30%;
+  }
+
+}
